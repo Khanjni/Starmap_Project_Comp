@@ -122,9 +122,9 @@ def main() -> None:
 
     bbox = list(tile_result.bbox) if tile_result.bbox is not None else None
 
-    map_file = Path(__file__).resolve().parent / "map.html"
+    map_file = Path(__file__).resolve().parent / "map1.html"
     if not map_file.exists():
-        raise FileNotFoundError(f"map.html not found at {map_file}")
+        raise FileNotFoundError(f"map1.html not found at {map_file}")
 
     app = Flask(__name__)
 
